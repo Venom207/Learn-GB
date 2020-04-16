@@ -1,3 +1,16 @@
+.wrapper {
+	margin-right: auto;
+	/* 1 */
+	margin-left: auto;
+	/* 1 */
+	max-width: 960px;
+	/* 2 */
+	padding-right: 10px;
+	/* 3 */
+	padding-left: 10px;
+	/* 3 */
+}
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 body {
@@ -21,7 +34,7 @@ header {
 header::after {
 	font-style: italic;
 	content: 'Открой для себя мир 3D';
-	margin-left: 165px;
+	margin-left: 20%;
 	clear: both;
 	display: block;
 }
@@ -173,7 +186,7 @@ header::after {
 
 	figure {
 		display: inline-block;
-		margin-left: 140px;
+		margin-left: 0 auto;
 		text-align: center;
 		float: left;
 	}
@@ -181,9 +194,9 @@ header::after {
 	.hr {
 		border-radius: 10px;
 		box-shadow: 0 0 7px 3px #575766;
-		text-indent: 30px;
-		padding: 10px 20px 10px 20px;
-		margin: 10px auto;
+		text-indent: 10px;
+		padding: 10px 10px 10px 10px;
+		margin: 10px;
 		width: 200px;
 	}
 
@@ -227,11 +240,10 @@ header::after {
 	}
 
 	footer {
-		margin-top: 30%;
+		margin-top: 35%;
 		text-align: center;
 		color: #000;
 		height: 60px;
-		border: none;
 	}
 
 	#inline {
