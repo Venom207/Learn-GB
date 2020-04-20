@@ -5,13 +5,11 @@
 	<meta charset="UTF-8">
 	<title>Контакты</title>
 </head>
-<script src="script.js"></script>
 <link rel="stylesheet" href="style/style.css" type="text/css">
 <header>
 	<div class="container">
 		<a href="index.html" </a>
-			<h1 class="logo">Твой 3D Мир<span> </span></h1>
-
+			<img src="img/logo1.png" alt="logo" class="logo">
 			<nav class="site-nav">
 				<ul>
 					<li><a href="index.html"><i class="menu"></i>Главная</a></li>
@@ -35,8 +33,8 @@
 		<div id="inline">
 			<h2 class="heading">Напишите нам</h2>
 			<form id="contact" action="#" method="post" name="contact">
-				<input id="name" class="txt" name="name" type="name" placeholder="Ваше имя">
-				<input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail">
+				<input id="name" class="txt" name="name" type="name" placeholder="Ваше имя"><label for="name"></label>
+				<input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail"><label for="email"></label>
 				<input id="topic" class="txt" name="topic" type="topic" placeholder="Тема письма">
 				<textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
 				<button id="send">Отправить</button>
@@ -53,8 +51,10 @@
 
 		</div>
 	</div>
-	<hr color="#cc0007">
-	<p align="center">Все права защищены &copy; 2020г.</p>
+	<footer>
+		<hr color="#cc0007">
+		<hr> Все права защищены &copy; 2020г.
+	</footer>
 </body>
 
 </html>

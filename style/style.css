@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
 .wrapper {
 	margin-right: auto;
 	/* 1 */
@@ -11,11 +13,9 @@
 	/* 3 */
 }
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
 body {
 	background: #f8f8f8;
-	/*font-family: */
+
 }
 
 .container {
@@ -25,6 +25,7 @@ body {
 }
 
 header {
+	/*создать блок с классом header*/
 	background: #E54B4B;
 	color: #EBEBD3;
 	padding: 1em 0;
@@ -33,7 +34,7 @@ header {
 
 header::after {
 	font-style: italic;
-	content: 'Открой для себя мир 3D';
+	content: '';
 	margin-left: 20%;
 	clear: both;
 	display: block;
@@ -160,6 +161,8 @@ header::after {
 
 	.site-nav li {
 		display: inline-block;
+		margin-top: 5%;
+		/*блок меню*/
 		border: none;
 	}
 
@@ -189,6 +192,7 @@ header::after {
 		margin-left: 0 auto;
 		text-align: center;
 		float: left;
+
 	}
 
 	.hr {
@@ -203,12 +207,22 @@ header::after {
 	.page-img {
 		margin-left: 40px;
 		border-radius: 10px;
+		box-sizing: border-box;
 		box-shadow: 0 0 7px 3px #575766;
 		text-indent: 30px;
 		padding: 10px 20px 10px 20px;
 		width: 200px;
 	}
 
+	.page-img:hover {
+		box-shadow: none;
+	}
+
+	p:first-letter {
+		text-indent: 50px !important;
+		font: italic bold 30px Lucida Console;
+		color: #E54B4B;
+	}
 
 	.pko {
 		margin-left: 40px;
@@ -226,21 +240,68 @@ header::after {
 		text-align: left;
 	}
 
-	.characteristics {
+	/*.characteristics {
 		margin-left: 40px;
 		list-style-image: url(../img/check-15.png);
 		font-style: oblique;
 		font-weight: 300;
 		line-height: 26px;
 		font: cursive;
+	}*/
+
+	.table {
+		margin-left: 40px;
+		border: 1px solid #484343;
+		border-collapse: collapse;
+		font-style: oblique;
+		font-weight: 300;
+		line-height: 26px;
+		font: cursive;
 	}
+
+	td {
+		border: 2px solid #484343;
+		vertical-align: middle;
+	}
+
+	.t1 {
+		margin: 10px 40px;
+		border: 1px solid #000;
+		width: 300px;
+		height: 150px;
+		border-collapse: collapse;
+	}
+
+	.top-line {
+		height: 50px;
+		background-color: cornflowerblue;
+	}
+
+	.t1 td {
+		border: 1px solid #000;
+		vertical-align: middle;
+		text-align: center;
+	}
+
 
 	.video {
 		margin-left: 40px;
 	}
 
+	.next-page {
+		display: inline-block;
+		margin-left: 40px;
+		font-style: oblique;
+		font-weight: 300;
+		font-size: 20px;
+		font: cursive;
+		color: #464655;
+		text-decoration: none;
+	}
+
 	footer {
-		margin-top: 35%;
+		/*Создать блок с классом footer и разместить в него содержимое футера.*/
+		margin-top: 5%;
 		text-align: center;
 		color: #000;
 		height: 60px;
@@ -265,6 +326,7 @@ header::after {
 		line-height: 1.4em;
 	}
 
+
 	.txtarea {
 		display: inline-block;
 		color: #676767;
@@ -275,9 +337,19 @@ header::after {
 		font-size: 15px !important;
 		line-height: 1.4em;
 		height: 80px;
+		text-transform: capitalize;
 	}
 
-	.txt:focus,
+	.txt:hover {
+		color: firebrick;
+	}
+
+	.txt:focus {
+		color: mediumblue;
+		background-color: lightgoldenrodyellow;
+		text-transform: capitalize;
+	}
+
 	.txtarea:focus {
 		border-style: solid;
 		border-color: #BABABA;
@@ -316,13 +388,11 @@ header::after {
 	}
 
 	#adress {
-		font-family: "Verdana"sans-serif;
-		font-style: normal;
+		font: italic bold 16px Lucida Console;
 		font-weight: normal;
 		color: #000;
 		width: 600px;
 		padding-top: 0px;
-		font-size: 16px !important;
 		line-height: 2em;
 		height: 10px;
 		border: none;
