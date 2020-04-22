@@ -19,6 +19,7 @@ body {
 }
 
 .container {
+	/*родительский блок с классом container, задать значение ширины и расположить блок по центру экрана*/
 	width: 95%;
 	max-width: 1000px;
 	margin: 0 auto;
@@ -28,6 +29,8 @@ header {
 	/*создать блок с классом header*/
 	background: #E54B4B;
 	color: #EBEBD3;
+	height: 20%;
+	/* Задать блоку с классом header значение высоты*/
 	padding: 1em 0;
 	position: relative;
 }
@@ -40,7 +43,14 @@ header::after {
 	display: block;
 }
 
+a {
+	text-decoration: none;
+	font: italic bold 16px "Lucida Console";
+	color: #E54B4B;
+}
+
 .logo {
+	/*Отодвинуть логотип от верхнего и левого края*/
 	float: left;
 	font-size: 1rem;
 	color: #EBEBD3;
@@ -180,10 +190,11 @@ header::after {
 		display: none;
 	}
 
-	.heading {
+	.stroke {
 		color: #000;
-		font-size: 18px;
-		font-weight: 400;
+		font-size: 20px;
+		font-weight: 600;
+		text-align: left;
 		background: #eaeaea;
 	}
 
@@ -192,16 +203,46 @@ header::after {
 		margin-left: 0 auto;
 		text-align: center;
 		float: left;
+	}
 
+	.short-title {
+		text-align: center;
+		text-indent: 30px !important;
+		font: italic bold 30px "Lucida Console";
 	}
 
 	.hr {
 		border-radius: 10px;
 		box-shadow: 0 0 7px 3px #575766;
-		text-indent: 10px;
+		text-indent: 50px !important;
 		padding: 10px 10px 10px 10px;
 		margin: 10px;
 		width: 200px;
+	}
+
+	#hr {}
+
+	.description {
+		position: relative;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+		text-align: inherit;
+	}
+
+	.description1 {
+		margin-left: 10px;
+		padding: 20px 70px;
+		width: calc(20% - 44px);
+		display: inline-block;
+	}
+
+	.description2 {
+		margin-left: 5px;
+		padding: 20px 90px;
+		width: calc(60% - 64px);
+		display: inline-block;
 	}
 
 	.page-img {
@@ -218,18 +259,23 @@ header::after {
 		box-shadow: none;
 	}
 
+	.cat {
+		text-align: center;
+	}
+
 	p:first-letter {
 		text-indent: 50px !important;
-		font: italic bold 30px Lucida Console;
+		font: italic bold 30px "Lucida Console";
 		color: #E54B4B;
 	}
 
 	.pko {
-		margin-left: 40px;
+		margin-left: 20px;
 		font-style: italic !important;
-		font-size: 14px !important;
+		font-size: 18px !important;
+		line-height: 1.5 !important;
 		color: #707070;
-		line-height: 16px
+		line-height: 18px;
 	}
 
 	.ppo {
@@ -265,11 +311,13 @@ header::after {
 	}
 
 	.t1 {
+		/*временно отключенно*/
 		margin: 10px 40px;
 		border: 1px solid #000;
 		width: 300px;
 		height: 150px;
 		border-collapse: collapse;
+		display: none;
 	}
 
 	.top-line {
@@ -278,11 +326,11 @@ header::after {
 	}
 
 	.t1 td {
+		/*временно 
 		border: 1px solid #000;
 		vertical-align: middle;
-		text-align: center;
+		text-align: center; отключенно*/
 	}
-
 
 	.video {
 		margin-left: 40px;
@@ -300,11 +348,19 @@ header::after {
 	}
 
 	footer {
-		/*Создать блок с классом footer и разместить в него содержимое футера.*/
 		margin-top: 5%;
-		text-align: center;
-		color: #000;
+		background: #eaeaea;
+		/*Поменять цвет фона.*/
+		color: #171616f7;
+		text-align: right;
+		padding-right: 20px;
 		height: 60px;
+		/*Задать высоту*/
+	}
+
+	.fline {
+		color: #cc0007;
+		width: 101.5%;
 	}
 
 	#inline {
@@ -381,14 +437,37 @@ header::after {
 		background: #E54B4B;
 		width: 210px;
 		margin-bottom: 20px;
+		box-shadow: 0 0 7px 3px #575766;
 	}
 
 	#send:hover {
 		background: #979797;
 	}
 
+	#buy {
+		color: #FFFFFF;
+		display: block;
+		padding: 10px 20px;
+		font-size: 1.5em;
+		border: solid 1px #F9F9F9;
+		border-radius: 15px;
+		background: #E54B4B;
+		width: 200px;
+		box-shadow: 0 0 7px 3px #575766;
+		margin: 10px 40px;
+	}
+
+	#buy:hover {
+		background: #979797;
+	}
+
+	#buy:active {
+		width: 198px;
+		box-shadow: 0 0 hsl(5, 60%, 60%);
+	}
+
 	#adress {
-		font: italic bold 16px Lucida Console;
+		font: italic bold 16px "Lucida Console";
 		font-weight: normal;
 		color: #000;
 		width: 600px;
