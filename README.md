@@ -1,2 +1,2 @@
-# my-site
-learning HTML and CSS 
+# Learning the basics of HTML and CSS at GeekBrains Academy
+
